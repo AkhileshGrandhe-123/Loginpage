@@ -47,6 +47,22 @@
            </div>
 		</div>
 	</div>
+<script type="text/javascript">
+	$(function() {
+		$("#login").on('click', function() {
+			var email = $("#email").val();
+			var password = $("#password").val();
+			if( email =='' || password ==''){
+				alert("Enter Feilds");
+			}
+			else if(password.length<6)
+			{
+				alert("enter valid passsword");
+			}
+		});
+	});
+	
+</script>
 
 
 
